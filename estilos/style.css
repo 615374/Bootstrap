@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Shadows+Into+Light&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Square+Peg&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+header{
+    background-color: rgb(122, 14, 122);
+    position: sticky;
+    padding: 10px;
+    top: 0;
+}
+ul li{
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.titulo{
+    color: rgb(122, 14, 122);
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.subtitulofotos{
+    color: rgb(122, 14, 122) ;
+    
+}
+
+.descripcion{
+    display: flex;
+    margin-top: 27rem;
+    align-items: flex-start;
+ 
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0,80cm;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 1cm;
+    
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
+    border: 2px solid black;
+}
+
+body{
+background-color: black;
+
+}
+
+
+iframe{
+ margin-top: 80px;
+}
+
+footer{
+    background-color: rgb(122, 14, 122);
+    padding: 40x 20px;
+    margin-bottom: 0;
+    margin-top: 160px;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.header{
+    display: flex;
+    justify-content: end;
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    margin: 1cm;
+    border: 1px solid
+    
+    
+}
+.fa-solid{
+    margin: 10px 10px; 
+}
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.video{
+    display: flex;
+    width: 300%;
+    height: 500%;
+}
+.redesociales{
+    display: flex;
+}
+.redes{
+    display: flex;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-left: 8rem;
+    font-size: medium;
+    
+       
+}
+.copyright{
+  
+   margin-block-end: 2cm; 
+   align-items: flex-end;   
+   margin-left: 50rem;
+   
+}
+
+.contacto{
+    margin-bottom: 10rem;
+    font-family: 'Shadows Into Light', cursive;
+    
+    
+}
+
+.formulario{
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    font-size: medium;
+    margin-bottom: 10rem; 
+
+}
+
+.navbar{
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: medium;
+    
+} 
+
+.acercademi{
+    
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    font-size: medium;
+    margin-bottom: 15rem;
+}
+
+.soyeliana{
+    width: 400px;
+    height: 400px;
+    margin-left: 25rem;
+    margin-bottom: 3rem;
+}
+
+
+.grilla{
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 1fr 25%;
+    grid-template-areas: 
+    "header header header header"
+    "galeria galeria galeria galeria"
+    "footer footer footer footer";
+    
+}
+.header-grid{
+    grid-area: header;
+    justify-content: end;
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+}
+
+.galeria-grid{
+    grid-area: galeria;
+}
+.footer-grid{
+    grid-area: footer;
+    padding: 10% 10%;
+
+    
+    
+}
+
+.padre{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   height: 1500px;
+   gap: 15px;
+   align-items: end;
+   justify-items: center;
+}
+
+.nav-grid{
+    display: flex;
+    justify-items: end;
+    margin-left: 20%;
+}
+
+
+.body-mobile{
+    background-color: black;    
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+}
+
+article, aside, .ad{
+    border: 2px solid rgb(138, 178, 69);;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    font-size: medium;
+} 
+
+/* mobile */
+
+.main-head{
+    display: grid;
+    justify-content: end;
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    grid-area: header;
+}
+
+.main-nav{
+    grid-area: nav;
+}
+
+.content{
+    grid-area: contenido;
+}
+
+.main-footer{
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.side{
+    grid-area: sidebar;
+}
+
+.ad{
+    grid-area: ad;
+}
+
+.galeria-gridindex{
+    grid-area: galeria;
+
+}
+
+.main-footer{
+    grid-area: footer;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 1 fr;
+    height: 1200px;
+    justify-items: center;
+    color: rgb(138, 178, 69);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1,85cm;  
+   
+}
+
+
+.wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "contenido"
+    "sidebar"
+    "ad"
+    "galeria"
+    "footer";
+}
+
+@media (min-width:768px){
+
+  .wrapper{
+      grid-template-columns: 1fr 3fr;
+      display: grid;
+      grid-template-areas:
+      "header header"
+      "nav nav"
+      " sidebar contenido"
+      "ad ad"
+      "galeria galeria"
+      "footer footer";
+    }
+}
+
+@media (min-width:1024px){
+    .wrapper{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "nav contenido sidebar"
+        "nav contenido ad"
+        "galeria galeria galeria"
+        "footer footer footer" ;
+    }
+}
+
+
+@media (min-width:768px){
+
+    .grilla{
+        grid-template-columns: 1fr 3fr;
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        " sidebar contenido"
+        "ad ad"
+        "galeria galeria"
+        "footer footer";
+      }
+  }
+  
+  @media (min-width:1024px){
+      .grilla{
+          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas:
+          "header header header"
+          "nav contenido sidebar"
+          "nav contenido ad"
+          "galeria galeria galeria"
+          "footer footer footer" ;
+      }
+  }
+  
