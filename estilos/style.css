@@ -6,6 +6,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
 header{
@@ -26,11 +27,26 @@ ul li{
     font-family: 'Shadows Into Light', cursive;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
    
 }
 
+.parrafo{
+    color: rgb(138, 178, 69);
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
 .subtitulofotos{
+    display: flex;
     color: rgb(122, 14, 122) ;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 15px;
+    justify-content: center;
     
 }
 
@@ -113,10 +129,30 @@ ul li a{
     margin: 30px;
 }
 
+.row{
+    display: flex;
+    padding: 10px;
+}
+
+.column{
+    flex: 25%;
+    padding: 10px;
+    
+}
+
+.column img{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 .video{
     display: flex;
-    width: 300%;
-    height: 500%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+   
 }
 .redesociales{
     display: flex;
@@ -143,17 +179,19 @@ ul li a{
 .contacto{
     margin-bottom: 10rem;
     font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
     
     
 }
 
-.formulario{
+.contacto1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-family: 'Shadows Into Light', cursive;
     color: rgb(138, 178, 69);
-    font-size: medium;
-    margin-bottom: 10rem; 
-
+    
 }
+ 
 
 .navbar{
     background-image: url(../imagenes/banner2.jpg);
@@ -178,193 +216,113 @@ ul li a{
     margin-bottom: 3rem;
 }
 
-
-.grilla{
-    display: grid; 
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25% 1fr 25%;
-    grid-template-areas: 
-    "header header header header"
-    "galeria galeria galeria galeria"
-    "footer footer footer footer";
-    
-}
-.header-grid{
-    grid-area: header;
-    justify-content: end;
-    background-image: url(../imagenes/banner2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: sticky;
-}
-
-.galeria-grid{
-    grid-area: galeria;
-}
-.footer-grid{
-    grid-area: footer;
-    padding: 10% 10%;
-
-    
-    
-}
-
-.padre{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   height: 1500px;
-   gap: 15px;
-   align-items: end;
-   justify-items: center;
-}
-
-.nav-grid{
+.flex-container{
     display: flex;
-    justify-items: end;
-    margin-left: 20%;
+    width: 100%;
+    height: auto;
 }
 
-
-.body-mobile{
-    background-color: black;    
-    flex-direction: column;
+.flex-galeria{
     display: flex;
-    min-height: 100vh;
-}
-
-article, aside, .ad{
-    border: 2px solid rgb(138, 178, 69);
-    font-family: 'Shadows Into Light', cursive;
-    color: rgb(138, 178, 69);
-    font-size: medium;
-} 
-
-/* mobile */
-
-.main-head{
-    display: grid;
-    justify-content: end;
-    background-image: url(../imagenes/banner2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: sticky;
-    grid-area: header;
-}
-
-.main-nav{
-    grid-area: nav;
-}
-
-.content{
-    grid-area: contenido;
-}
-
-.main-footer{
-    margin-bottom: 0;
-    margin-top: auto;
-}
-
-.side{
-    grid-area: sidebar;
-}
-
-.ad{
-    grid-area: ad;
-}
-
-.galeria-gridindex{
-    grid-area: galeria;
+    width: 100%;
+    height: auto;
 
 }
 
-.main-footer{
-    grid-area: footer;
+
+@media (min-width:300px){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
 }
 
-.padre{
-    display: grid;
-    grid-template-columns: 1 fr;
-    grid-template-rows: 1 fr;
-    height: 1200px;
-    justify-items: center;
-    color: rgb(138, 178, 69);
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1,85cm;  
-   
-}
 
+@media (min-width:600px){
 
-.wrapper{
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-    "header"
-    "nav"
-    "contenido"
-    "sidebar"
-    "ad"
-    "galeria"
-    "footer";
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
 }
 
 @media (min-width:768px){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
 
-  .wrapper{
-      grid-template-columns: 1fr 3fr;
-      display: grid;
-      grid-template-areas:
-      "header header"
-      "nav nav"
-      " sidebar contenido"
-      "ad ad"
-      "galeria galeria"
-      "footer footer";
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
     }
 }
+
+
 
 @media (min-width:1024px){
-    .wrapper{
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-areas:
-        "header header header"
-        "nav contenido sidebar"
-        "nav contenido ad"
-        "galeria galeria galeria"
-        "footer footer footer" ;
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
     }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
+    
 }
 
 
-@media (min-width:768px){
 
-    .grilla{
-        grid-template-columns: 1fr 3fr;
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "nav nav"
-        " sidebar contenido"
-        "ad ad"
-        "galeria galeria"
-        "footer footer";
-      }
-  }
   
-  @media (min-width:1024px){
-      .grilla{
-          grid-template-columns: 1fr 4fr 1fr;
-          grid-template-areas:
-          "header header header"
-          "nav contenido sidebar"
-          "nav contenido ad"
-          "galeria galeria galeria"
-          "footer footer footer" ;
-      }
-  }
-  
-  .box{
+.box{
     border-radius: 6px;
     width: 30px;
     height: 15px;
