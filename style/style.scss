@@ -1,0 +1,253 @@
+@import "variables";
+@import "generales";
+@import "index";
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.descripcion{
+    display: flex;
+    margin-top: 27rem;
+    align-items: flex-start;
+ 
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
+    border: 2px solid black;
+}
+
+
+iframe{
+ margin-top: 80px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: end;
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.fa-solid{
+    margin: 10px 10px; 
+}
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.row{
+    display: flex;
+    padding: 10px;
+}
+
+.column{
+    flex: 25%;
+    padding: 10px;
+    
+}
+
+.column img{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+.contacto{
+    margin-bottom: 10rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    
+    
+}
+
+.contacto1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    
+}
+ 
+
+.navbar{
+    background-image: url(../imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: medium;
+    
+} 
+
+.acercademi{
+    
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(138, 178, 69);
+    font-size: medium;
+    margin-bottom: 15rem;
+}
+
+.soyeliana{
+    width: 400px;
+    height: 400px;
+    margin-left: 25rem;
+    margin-bottom: 3rem;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.flex-galeria{
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media (min-width:300px){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
+}
+
+
+@media (min-width:600px){
+
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
+}
+
+@media (min-width:768px){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
+}
+
+
+
+@media (min-width:1024px){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        
+    }
+
+    .flex-galeria{
+        flex-direction: 2 column;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul{
+         display: flex;
+         justify-content: space-between;
+    }
+    
+}
+
+
+
+  
+.box{
+    border-radius: 6px;
+    width: 30px;
+    height: 15px;
+    margin: 0;
+  }
+
+  .box1{
+    background-color:rgb(138, 178, 69);
+    transition-property: all;
+    transition-duration: 2s;
+ }
+
+  .box1:hover{
+    transform: scale(2);
+  }
+
+  .circle1{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    background-color: rgb(122, 14, 122);
+    transition: all 2s ease;
+
+}
+
+.container-circle:hover .circle1{
+    transform: translateX(200px);
+}
+
+
+

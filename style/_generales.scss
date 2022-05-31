@@ -1,0 +1,78 @@
+nav{
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem;
+
+    ul{
+        display: flex;
+    
+        li{
+            list-style-type: none;
+            font-size: larger;
+            font-weight: bold;
+            display: inline-block;
+
+            a{
+                margin: 1cm;
+                border: 1px solid
+                text-decoration none;
+                color: black;
+                font-size: 0,80cm;
+                font-family: 'Shadows Into Light', cursive;
+                margin: 1cm;
+                
+           
+            }
+        
+        }
+    
+    }
+}
+
+
+
+header{
+    background-color: rgb(122, 14, 122);
+    position: sticky;
+    padding: 10px;
+    top: 0;
+}
+
+
+
+body{
+    background-color: black;
+    
+}
+
+footer{
+    background-color: rgb(122, 14, 122);
+    padding: 40x 20px;
+    margin-bottom: 0;
+    margin-top: 160px;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.redesociales{
+    display: flex;
+}
+.redes{
+    display: flex;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-left: 8rem;
+    font-size: medium;
+    
+       
+}
+.copyright{
+  
+   margin-block-end: 2cm; 
+   align-items: flex-end;   
+   margin-left: 50rem;
+   
+}
