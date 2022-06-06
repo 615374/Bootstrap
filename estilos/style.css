@@ -1,3 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Shadows+Into+Light&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Sans:ital@1&family=Quicksand:wght@300&family=Square+Peg&display=swap");
+.btn--twitter {
+  background-color: #55acee;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.btn--instagram {
+  background-color: #641664;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.redSocial, .redsocial--social, .redsocial--nueva, .redsocial--mark {
+  border: 1px solid black;
+  background-color: #5c910b;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.redsocial--social {
+  border-radius: 2px;
+}
+
+.redsocial--nueva {
+  font-size: medium;
+}
+
+.redsocial--mark {
+  border-radius: 3px;
+}
+
+/*mixin*/
+.my_mixin {
+  width: 50px;
+  height: 25px;
+  background-color: #5c910b;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #7a0e7a;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 10px;
+  top: 0;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,27 +74,20 @@ nav ul {
 }
 
 nav ul li {
+  display: inline-block;
   list-style-type: none;
   font-size: larger;
   font-weight: bold;
-  display: inline-block;
 }
 
 nav ul li a {
-  margin: 1cm;
-  border: 1px solid text-decoration none;
+  text-decoration: none;
   color: black;
   font-size: 0,80cm;
   font-family: 'Shadows Into Light', cursive;
   margin: 1cm;
-}
-
-header {
-  background-color: #7a0e7a;
-  position: -webkit-sticky;
-  position: sticky;
-  padding: 10px;
-  top: 0;
+  margin: 1cm;
+  border: 1px solid;
 }
 
 body {
@@ -52,35 +104,15 @@ footer {
   margin-bottom: 0;
 }
 
-.redesociales {
+.botones-redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: list-item;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
+  list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px;
-  margin-left: 8rem;
-  font-size: medium;
-}
-
-.copyright {
-  -webkit-margin-after: 2cm;
-          margin-block-end: 2cm;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-left: 50rem;
 }
 
 .titulo {
@@ -120,23 +152,8 @@ footer {
           justify-content: center;
 }
 
-.video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 100px;
-}
-
-* {
-  padding: 0%;
-  margin: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+iframe {
+  margin-top: 80px;
 }
 
 .descripcion {
@@ -154,10 +171,6 @@ img {
   height: 300px;
   margin-top: 80px;
   border: 2px solid black;
-}
-
-iframe {
-  margin-top: 80px;
 }
 
 .header {
@@ -206,6 +219,49 @@ iframe {
   margin-top: 20px;
   margin-left: 50px;
   margin-bottom: 20px;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.redesociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: list-item;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+  margin-left: 8rem;
+  font-size: medium;
+}
+
+.copyright {
+  -webkit-margin-after: 2cm;
+          margin-block-end: 2cm;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 50rem;
 }
 
 .contacto {

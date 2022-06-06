@@ -1,36 +1,8 @@
-nav{
-    display: flex;
-    align-items: flex-start;
-    padding: 4rem;
-
-    ul{
-        display: flex;
-    
-        li{
-            list-style-type: none;
-            font-size: larger;
-            font-weight: bold;
-            display: inline-block;
-
-            a{
-                margin: 1cm;
-                border: 1px solid
-                text-decoration none;
-                color: black;
-                font-size: 0,80cm;
-                font-family: 'Shadows Into Light', cursive;
-                margin: 1cm;
-                
-           
-            }
-        
-        }
-    
-    }
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
-
-
-
 header{
     background-color: rgb(122, 14, 122);
     position: sticky;
@@ -40,10 +12,43 @@ header{
 
 
 
+nav{
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem;
+
+    ul{
+        display: flex;
+
+        li{
+            display: inline-block;
+            list-style-type: none;
+            font-size: larger;
+            font-weight: bold;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 0,80cm;
+                font-family: 'Shadows Into Light', cursive;
+                margin: 1cm;
+                margin: 1cm;
+                border: 1px solid
+                
+                
+            }
+            
+        }
+    }
+}
+
+
+
 body{
     background-color: black;
-    
-}
+    }
+
+
 
 footer{
     background-color: rgb(122, 14, 122);
@@ -55,24 +60,11 @@ footer{
     margin-bottom: 0;
 }
 
-.redesociales{
+.botones-redes{
     display: flex;
-}
-.redes{
-    display: flex;
-    display: list-item;
-    justify-content: center;
+    display: inline-block;
+    list-style-type: none;
     align-items: center;
-    margin: 50px;
-    margin-left: 8rem;
-    font-size: medium;
-    
-       
 }
-.copyright{
-  
-   margin-block-end: 2cm; 
-   align-items: flex-end;   
-   margin-left: 50rem;
-   
-}
+
+
