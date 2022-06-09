@@ -115,6 +115,17 @@ footer {
           align-items: center;
 }
 
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .titulo {
   color: #7a0e7a;
   font-family: 'Shadows Into Light', cursive;
@@ -213,6 +224,10 @@ img {
       -ms-flex: 25%;
           flex: 25%;
   padding: 10px;
+}
+
+.descripcion {
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .column img {
