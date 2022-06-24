@@ -116,14 +116,9 @@ footer {
 }
 
 h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Shadows Into Light', cursive;
   margin-top: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .titulo {
@@ -141,6 +136,7 @@ h1 {
 .parrafo {
   color: #8ab245;
   font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,6 +161,24 @@ h1 {
 
 iframe {
   margin-top: 80px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .descripcion {
@@ -226,6 +240,10 @@ img {
   padding: 10px;
 }
 
+p {
+  text-align: justify;
+}
+
 .descripcion {
   font-family: 'Shadows Into Light', cursive;
 }
@@ -280,14 +298,34 @@ img {
 }
 
 .contacto {
-  margin-bottom: 10rem;
   font-family: 'Shadows Into Light', cursive;
   color: #8ab245;
 }
 
 .contacto1 {
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  font-family: 'Shadows Into Light', cursive;
+  color: #8ab245;
+}
+
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 12rem;
+}
+
+.nav-link {
+  margin-right: 0;
+  margin-left: 4rem;
+}
+
+.formulario {
+  margin-top: 4rem;
+  margin-bottom: 15rem;
   font-family: 'Shadows Into Light', cursive;
   color: #8ab245;
 }
@@ -307,10 +345,14 @@ img {
 }
 
 .soyeliana {
-  width: 400px;
-  height: 400px;
-  margin-left: 25rem;
-  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .flex-container {
@@ -327,6 +369,11 @@ img {
   display: flex;
   width: 100%;
   height: auto;
+}
+
+.img1:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media (min-width: 300px) {

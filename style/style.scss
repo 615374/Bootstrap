@@ -49,7 +49,10 @@ img{
     flex: 25%;
     padding: 10px;
     
+}
     
+p{
+    text-align: justify;
 }
 
 .descripcion{
@@ -61,7 +64,9 @@ img{
     margin-top: 20px;
     margin-left: 50px;
     margin-bottom: 20px;
+    
 }
+
 .video{
     display: flex;
     width: 100%;
@@ -92,18 +97,40 @@ img{
    
 }
 .contacto{
-    margin-bottom: 10rem;
+    
     font-family: 'Shadows Into Light', cursive;
     color: rgb(138, 178, 69);
     
     
+    
+         
 }
 .contacto1{
-    margin-top: 2rem;
+    
     margin-bottom: 2rem;
     font-family: 'Shadows Into Light', cursive;
     color: rgb(138, 178, 69);
     
+}
+
+.container-fluid{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 12rem;
+   
+}
+
+.nav-link{
+    margin-right: 0;
+    margin-left: 4rem;
+}
+
+.formulario{
+    margin-top: 4rem;
+    margin-bottom: 15rem;
+    font-family: 'Shadows Into Light', cursive;
+    color:  rgb(138, 178, 69);
+
 }
  
 .navbar{
@@ -119,12 +146,16 @@ img{
     color: rgb(138, 178, 69);
     font-size: medium;
     margin-bottom: 15rem;
+    
 }
 .soyeliana{
-    width: 400px;
-    height: 400px;
-    margin-left: 25rem;
-    margin-bottom: 3rem;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+  
 }
 .flex-container{
     display: flex;
@@ -135,6 +166,10 @@ img{
     display: flex;
     width: 100%;
     height: auto;
+}
+
+.img1:hover{
+    transform: scale(1);
 }
 
 @media (min-width:300px){
